@@ -159,20 +159,26 @@ height: 50%;
               <div class="caption">
                 <table>
                   <tr>
-                    <th class="text-left font-weight-normal">Precio</th>
-                    <td><p class="font-weight-normal" style="font-size: 16px;">$ <?php echo $producto_precio;?> </p></td>
+                    <th class="text-left font-weight-normal"  style="font-size: 18px;">Precio</th>
+                    <td>
+                      <input type="hidden" id="input_precio" value="<?php echo $producto_precio;?>">
+                       <p class="font-weight-normal" style="font-size: 18px;"><div id="precio">$<?php echo number_format($producto_precio,2,',','.');;?></div></p>
+                     </td>
                   </tr>
                   <tr>
                     <th class="text-left">Cantidad</th>
                     <td class="text-left">
                       <div class="quantity">
-                          <input type="number" min="1" max="9" step="1" value="1">
+                          <input type="number" min="1" max="9" step="1" value="1" id="qty">
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <th colspan="2"  class="text-left">
-                          <a href="index.php" class="btn btn-warning"><i class="fa fa-shopping-cart fa-lg"></i>&nbsp;Comprar</a>
+                      <input type="hidden" id="idArticulo" value="<?php echo $idArticulo;?>">
+                          <a class="btn btn-warning" id="btnComprar">
+                             <i class="fa fa-shopping-cart fa-lg"></i>&nbsp;Comprar
+                          </a>
                     </th>
                   </tr>
                 </table>
@@ -211,16 +217,15 @@ include("scriptJs.php");
 ?>
 
 <script>
-function updateCartItem(obj,id){
-  $.get("accionCarrito.php", {action:"updateCartItem", id:id, qty:obj.value}, function(data){
-    //alert(data)
-    if(data == 'ok'){
-      location.reload();
-    }else{
-      alert('Cart update failed, please try again.');
-    }
-  });
-}
+
+$("#btnComprar").click(function (e) {
+  e.preventDefault();
+  var idArticulo = $("#idArticulo").val();
+  var qty = $("#qty").val();
+  location.href='accionCarrito.php?action=addToCart&id='+idArticulo+"&cantidad="+qty;
+
+})
+
 
 jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up" style="font-weight: bold;">+</div><div class="quantity-button quantity-down" style="font-weight: bold;">-</div></div>').insertAfter('.quantity input');
     jQuery('.quantity').each(function() {
@@ -232,23 +237,29 @@ jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up" style
         max = input.attr('max');
 
       btnUp.click(function() {
+        var precio=$("#input_precio").val();
         var oldValue = parseFloat(input.val());
         if (oldValue >= max) {
           var newVal = oldValue;
         } else {
           var newVal = oldValue + 1;
         }
+        total = precio*newVal;
+        $("#precio").html("$"+total.toFixed(2));
         spinner.find("input").val(newVal);
         spinner.find("input").trigger("change");
       });
 
       btnDown.click(function() {
+        var precio=$("#input_precio").val();
         var oldValue = parseFloat(input.val());
         if (oldValue <= min) {
           var newVal = oldValue;
         } else {
           var newVal = oldValue - 1;
         }
+        total = precio*newVal;
+        $("#precio").html("$"+total.toFixed(2));
         spinner.find("input").val(newVal);
         spinner.find("input").trigger("change");
       });

@@ -12,10 +12,9 @@ include 'carrito.php';
 $cart = new Cart;
 // include database configuration file
 include './php/conexion.php';
+$cantidad = isset($_REQUEST['cantidad'])?$_REQUEST['cantidad']:1;
 if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){ //si viene algo en accion
   if($_REQUEST['action'] == 'addToCart' && !empty($_REQUEST['id'])){ // si en accion viene addToCart y tb viene un id
-
-
     $productID = $_REQUEST['id'];
     // get product details
     $query = $con->query("SELECT * FROM articulos WHERE id = ".$productID);
@@ -25,13 +24,13 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){ //si viene algo e
       'name' => $row['descripcion'],
       'price' => $row['precioConIva']*$row['porcentajeRecargo'],
       'discount' => 0,
-      'qty' => 1
+      'qty' => $cantidad
     );
 
     $insertItem = $cart->insert($itemData);
     $redirectLoc = $insertItem?'verCarrito.php':'index.php'; //si es TRUE salio bien y agrego a carrito y redirecciona a verCarrito
     header("Location: ".$redirectLoc);
-  }elseif($_REQUEST['action'] == 'updateCartItem' && !empty($_REQUEST['id'])){ //si accion es updateCartItem
+  } elseif($_REQUEST['action'] == 'updateCartItem' && !empty($_REQUEST['id'])){ //si accion es updateCartItem
     $itemData = array(
       'rowid' => $_REQUEST['id'],
       'qty' => $_REQUEST['qty']
