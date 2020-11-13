@@ -159,14 +159,16 @@ height: 50%;
               <div class="caption">
                 <table>
                   <tr>
-                    <th class="text-left font-weight-normal"  style="font-size: 18px;">Precio</th>
-                    <td>
+                    <th class="text-left font-weight-normal"  style="font-size: 26px;" colspan ="2">
                       <input type="hidden" id="input_precio" value="<?php echo $producto_precio;?>">
-                       <p class="font-weight-normal" style="font-size: 18px;"><div id="precio">$<?php echo number_format($producto_precio,2,',','.');;?></div></p>
-                     </td>
+                       <div id="precio">$&nbsp;<?php echo number_format($producto_precio,2,',','.');;?></div>
+                     </th>
                   </tr>
                   <tr>
-                    <th class="text-left">Cantidad</th>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-left" style="font-size: 18px;">Cantidad:&nbsp;</td>
                     <td class="text-left">
                       <div class="quantity">
                           <input type="number" min="1" max="9" step="1" value="1" id="qty">
@@ -174,9 +176,12 @@ height: 50%;
                     </td>
                   </tr>
                   <tr>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
                     <th colspan="2"  class="text-left">
                       <input type="hidden" id="idArticulo" value="<?php echo $idArticulo;?>">
-                          <a class="btn btn-warning" id="btnComprar">
+                          <a class="btn btn-primary" id="btnComprar" style="color:#ffffff;">
                              <i class="fa fa-shopping-cart fa-lg"></i>&nbsp;Comprar
                           </a>
                     </th>
@@ -218,6 +223,20 @@ include("scriptJs.php");
 
 <script>
 
+function formatMoney(number, decPlaces, decSep, thouSep) {
+decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces,
+decSep = typeof decSep === "undefined" ? "." : decSep;
+thouSep = typeof thouSep === "undefined" ? "," : thouSep;
+var sign = number < 0 ? "-" : "";
+var i = String(parseInt(number = Math.abs(Number(number) || 0).toFixed(decPlaces)));
+var j = (j = i.length) > 3 ? j % 3 : 0;
+
+return sign +
+	(j ? i.substr(0, j) + thouSep : "") +
+	i.substr(j).replace(/(\decSep{3})(?=\decSep)/g, "$1" + thouSep) +
+	(decPlaces ? decSep + Math.abs(number - i).toFixed(decPlaces).slice(2) : "");
+}
+
 $("#btnComprar").click(function (e) {
   e.preventDefault();
   var idArticulo = $("#idArticulo").val();
@@ -245,7 +264,8 @@ jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up" style
           var newVal = oldValue + 1;
         }
         total = precio*newVal;
-        $("#precio").html("$"+total.toFixed(2));
+        total_formateado = formatMoney(total, 2, ',', '.')
+        $("#precio").html("$ "+total_formateado);
         spinner.find("input").val(newVal);
         spinner.find("input").trigger("change");
       });
@@ -259,7 +279,8 @@ jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up" style
           var newVal = oldValue - 1;
         }
         total = precio*newVal;
-        $("#precio").html("$"+total.toFixed(2));
+        total_formateado = formatMoney(total, 2, ',', '.')
+        $("#precio").html("$ "+total_formateado);
         spinner.find("input").val(newVal);
         spinner.find("input").trigger("change");
       });

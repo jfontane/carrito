@@ -6,12 +6,14 @@ $styleLogin="";
 if ($usuario!="") {
   $foto=$_SESSION['foto'];
   $styleUsuario='';
-  $styleLogin=' style="display:none" ';
+  $verLogin=' style="display:none" ';
+  $verUser='';
   $stylePedidosPendientes='';
   $styleMensajesPendientes='';
 } else {
   $styleUsuario=' style="display:none" ';
-  $styleLogin='';
+  $verLogin='';
+  $verUser=' style="display:none" ';
   $stylePedidosPendientes=' style="display:none" ';
   $styleMensajesPendientes=' style="display:none" ';
 
@@ -21,9 +23,9 @@ $cantidad_pedidos="";
 if ($usuario) $cantidad_pedidos=calcularPedidosPendientes($con);
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F8FC74;">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="navbar-header">
-    <a class="navbar-brand" href="index.php"><img src="assets/img/fotocopia.png" width="130"></a>
+      <a class="navbar-brand" href="index.php"><img src="assets/img/fotocopia.png" width="130"></a>
   </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -31,14 +33,15 @@ if ($usuario) $cantidad_pedidos=calcularPedidosPendientes($con);
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php" style='color: #16609B;'><i class="fa fa-home fa-lg">&nbsp;</i>Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item <?php if ($paginaActiva=='index') echo "active"; ?> ">
+        <a class="nav-link" href="index.php">
+             <i class="fa fa-home fa-lg">&nbsp;</i>Home <span class="sr-only">(current)</span></a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="listado.php"  title="Catalogo de Articulos" style='color: #16609B;'>
+      <li class="nav-item  <?php if ($paginaActiva=='listado') echo "active"; ?> ">
+        <a class="nav-link" href="listado.php"  title="Listado de Articulos">
           <i class="fa fa-clipboard fa-lg">&nbsp;<br></i>Listado
         </a>
       </li>
@@ -50,29 +53,29 @@ if ($usuario) $cantidad_pedidos=calcularPedidosPendientes($con);
         </a>
       </li>
 
-      <li class="nav-item">
-        <a href="login.php" class="nav-link"  style='color: #16609B;'>
+      <li class="nav-item  <?php if ($paginaActiva=='ingresar') echo "active"; ?> " <?php echo $verLogin;?>>
+        <a href="login.php" class="nav-link">
             <i class="fa fa-sign-in fa-lg" aria-hidden="true">&nbsp;</i>Ingresar
             </a>
       </li>
 
-      <li class="nav-item">
-        <a href="verCarrito.php" class="nav-link"  title="Carrito de Compras"  style='color: #16609B;'>
+      <li class="nav-item <?php if ($paginaActiva=='verCarrito') echo "active"; ?> ">
+        <a href="verCarrito.php" class="nav-link"  title="Carrito de Compras">
           <i class="fa fa-shopping-cart fa-lg">&nbsp;</i>Carrito
           <?php if ($cart->total_items()) echo "<span class='badge badge-light'>".$cart->total_items()."</span>";?>
         </a>
       </li>
 
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" <?php echo $verUser;?>>
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style='color: #16609B;'>
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-user fa-lg"></i>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Mis datos</a>
           <a class="dropdown-item" href="#">Seguridad</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="logout.php"><i class="fa fa-sign-out fa-lg"></i>&nbsp;Salir</a>
+             <a class="dropdown-item" href="logout.php"><i class="fa fa-sign-out fa-lg"></i>&nbsp;Salir</a>
         </div>
       </li>
 

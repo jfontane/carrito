@@ -2,7 +2,7 @@
 // initializ shopping cart class
 include 'carrito.php';
 $cart = new Cart;
-$paginaActivo='verCarrito';
+$paginaActiva='verCarrito';
 
 ?>
 
@@ -22,8 +22,6 @@ $paginaActivo='verCarrito';
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- custom CSS here -->
   <link href="assets/css/style.css" rel="stylesheet" />
-
-
 
 </head>
 <body>

@@ -2,7 +2,7 @@
 include 'php/conexion.php';
 include 'carrito.php';
 $cart = new Cart;
-$paginaActivo='catalogo';
+$paginaActiva='listado';
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ $paginaActivo='catalogo';
 
       <!-- /.row -->
 
-      
+
       <hr>
 
 <div class="row">

@@ -4,8 +4,8 @@ include 'carrito.php';
 $cart = new Cart;
 $paginaActivo='ingresar';
 $targetUrl=!isset($_GET['target'])?NULL:$_GET['target'];
-if ($targetUrl=="") $targetUrl="index"
-
+if ($targetUrl=="") $targetUrl="index";
+$paginaActiva='ingresar';
 
 
 ?>
@@ -102,7 +102,7 @@ $(document).ready(function() {
     var parametros = $(this).serialize();
     $.ajax({
       type: "POST",
-      url: "autenticacion.php",
+      url: "ajax/autenticacion.php",
       data: parametros,
       beforeSend: function(objeto){
         $("#resultado").html("<center><img src='img/ajax-loader.gif'></center>");

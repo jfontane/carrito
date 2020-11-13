@@ -78,7 +78,8 @@ if ($numrows>0)	{
           <div class="card">
             <img class="card-img-top" src="assets/img/banner/<?php echo $url_image;?>" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h6 class="card-title" style="text-decoration:line-through">$&nbsp;<?php echo number_format($prod_precio_regular,'2',',','.'); ?></h6>
+              <h5 class="card-title">$&nbsp;<?php echo number_format($prod_precio_oferta,'2',',','.'); ?></h5>
               <p class="text-capitalize"><?php echo $prod_titulo_patron; ?></p>
               <a href="accionCarrito.php?action=addToCart&id=<?php echo $articulo_id; ?>" class="btn btn-primary">
                 <i class="fa fa-shopping-cart fa-lg">&nbsp;</i>Agregar
