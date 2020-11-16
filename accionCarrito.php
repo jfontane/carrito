@@ -21,7 +21,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){ //si viene algo e
     $row = $query->fetch_assoc();
     $itemData = array(
       'id' => $row['id'],
-      'name' => $row['descripcion'],
+      'name' => $row['titulo'],
       'price' => $row['precioConIva']*$row['porcentajeRecargo'],
       'discount' => 0,
       'qty' => $cantidad

@@ -15,19 +15,20 @@ where promociones.articulo_id=4035 and promociones.articulo_id=articulos.id and 
 
 */
 
-$tables=" promociones";
-$sWhere=" where promociones.articulo_id=".$idArticulo;
-$sql="SELECT promociones.* FROM  $tables  $sWhere ";
+$tables=" articulos";
+$sWhere=" articulos.id=".$idArticulo;
+$sql="SELECT articulos.* FROM  $tables  WHERE $sWhere ";
 //echo $sql;
 $resultado = $con->query($sql);
 
 $fila=$resultado->fetch_assoc();
 $producto_descripcion=$fila['descripcion'];
 $producto_titulo=$fila['titulo'];
-$producto_foto=$fila['url_image'];
+$producto_array_fotos=unserialize($fila['url_image']);
+
 //$producto_id=$fila['articulo_id'];
 
-$producto_precio=$fila['precio']*$fila['porcentajeRecargo'];
+$producto_precio=$fila['precioConIva']*$fila['porcentajeRecargo'];
 //$producto_categoria=$fila['categoria_descripcion'];
 ?>
 
@@ -117,6 +118,22 @@ position: absolute;
 bottom: -1px;
 height: 50%;
 }
+
+img.zoom {
+    width: 350px;
+    height: 200px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+
+.transition {
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -o-transform: scale(1.8);
+    transform: scale(1.8);
+}
   </style>
 </head>
 <body>
@@ -150,7 +167,7 @@ height: 50%;
         <div class="row">
           <div class="col-xs-6 col-sm-6 col-md-6 text-center ">
             <div class="thumbnail product-box">
-              <img src="assets/img/banner/<?=$producto_foto?>" class="img-responsive text-center" alt="" style="width: 80%; height: auto;">
+              <img src="assets/img/banner/<?=$producto_array_fotos[0]?>" data-zoom-image="assets/img/banner/<?=$producto_array_fotos[0]?>" id="zoom_01" alt="" style="width: 80%; height: auto;">
             </div>
           </div>
           <!-- /.col -->
@@ -221,7 +238,25 @@ include("footer.php");
 include("scriptJs.php");
 ?>
 
+
+<script src='jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/2.2.3/jquery.elevatezoom.min.js'></script>
 <script>
+
+$(document).ready(function(){
+    $('.zoom').hover(function() {
+        $(this).addClass('transition');
+    }, function() {
+        $(this).removeClass('transition');
+    });
+});
+
+$('#zoom_01').elevateZoom({
+       cursor: "crosshair",
+       zoomWindowFadeIn: 500,
+       zoomWindowFadeOut: 750
+     });
+
 
 function formatMoney(number, decPlaces, decSep, thouSep) {
 decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces,

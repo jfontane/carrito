@@ -23,6 +23,8 @@ $cantidad_pedidos="";
 if ($usuario) $cantidad_pedidos=calcularPedidosPendientes($con);
 ?>
 
+
+
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="navbar-header">
       <a class="navbar-brand" href="index.php"><img src="assets/img/fotocopia.png" width="130"></a>
@@ -33,7 +35,7 @@ if ($usuario) $cantidad_pedidos=calcularPedidosPendientes($con);
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item <?php if ($paginaActiva=='index') echo "active"; ?> ">
         <a class="nav-link" href="index.php">

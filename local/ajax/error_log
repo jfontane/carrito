@@ -1,0 +1,130 @@
+[22-May-2020 14:54:29 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): Resource temporarily unavailable in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[22-May-2020 14:54:30 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 19:23:15 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:15 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=24565 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:15 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:15 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=24592 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=24577 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=24595 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=24585 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:18 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=24620 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=24617 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=24625 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=24626 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:21 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 19:23:24 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:24 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=24632 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:24 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:24 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 19:23:27 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:27 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=24666 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:27 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 19:23:27 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3191 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3164 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3156 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3148 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3151 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3219 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:12 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:15 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:15 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3231 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:15 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:15 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:18 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:18 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3273 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:18 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:18 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:24 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:24 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3359 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:24 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:24 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:27 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:27 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3394 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:27 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:27 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3587 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3601 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3621 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3612 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:30 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:33 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:33 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3630 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:33 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:33 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:33 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:33 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3653 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:33 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:33 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:36 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:36 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3663 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:36 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:36 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:36 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:36 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3676 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:36 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:36 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:39 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:39 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3690 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:39 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:39 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[28-May-2020 21:21:42 UTC] PHP Warning:  mysqli::__construct(): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:42 UTC] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3746 in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:42 UTC] PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /home7/mrlhofsr/public_html/local/php/conexion.php on line 9
+[28-May-2020 21:21:42 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home7/mrlhofsr/public_html/local/php/conexion.php on line 10
+[21-Aug-2020 22:14:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home7/mrlhofsr/public_html/local/ajax/banner_listar.php:33
+Stack trace:
+#0 {main}
+  thrown in /home7/mrlhofsr/public_html/local/ajax/banner_listar.php on line 33

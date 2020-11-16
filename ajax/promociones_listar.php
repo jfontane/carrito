@@ -6,18 +6,17 @@ include ("../php/conexion.php");
 
 $ordenar_por=(isset($_REQUEST['query']) && !empty($_REQUEST['query']))?$_REQUEST['query']:'descripcion';
 if ($ordenar_por=='menor_precio') {
-    $_SESSION['order']=' Order by promociones.precio asc ';
+    $_SESSION['order']=' Order by articulos.precio asc ';
 
 } else if ($ordenar_por=='mayor_precio') {
-    $_SESSION['order']=' Order by promociones.precio desc ';
+    $_SESSION['order']=' Order by articulos.precio desc ';
 } else if ($ordenar_por=='descripcion') {
-    $_SESSION['order']=' Order by promociones.descripcion asc ';
+    $_SESSION['order']=' Order by articulos.descripcion asc ';
 };
 
-$tables="promociones";
-$sWhere=" ";
-$sWhere.=" ".$_SESSION['order']." ";
-
+$tables="articulos ";
+$sWhere=" articulos.promocion='Si'";
+$sWhere.=" ORDER BY articulos.fecha DESC ";
 
 include 'pagination.php'; //include pagination file
 
@@ -28,7 +27,8 @@ $adjacents  = 4; //gap between pages after number of adjacents
 $offset = ($page - 1) * $per_page;
 
 //Count the total number of row in your table*/
-$count_query   = mysqli_query($con,"SELECT count(*) AS numrows FROM $tables  $sWhere ");
+$count_query   = mysqli_query($con,"SELECT count(*) AS numrows FROM $tables WHERE $sWhere ");
+//die("SELECT count(*) AS numrows FROM $tables  WHERE $sWhere ");
 if ($row= mysqli_fetch_array($count_query))
 {
 	$numrows = $row['numrows'];
@@ -38,7 +38,7 @@ $total_pages = ceil($numrows/$per_page);
 //$reload = './banner_ajax.php';
 //main query to fetch the data
 
-$sql="SELECT * FROM  $tables  $sWhere LIMIT $offset,$per_page";
+$sql="SELECT * FROM  $tables WHERE $sWhere LIMIT $offset,$per_page";
 //die($sql."entroooo");
 $query = mysqli_query($con,$sql);
 
@@ -55,22 +55,23 @@ if ($numrows>0)	{
         }
         $cant++;
 				$id=$row['id'];
-				if ($row['url_image']=="demo.png") {
-					$url_image="demo_thumb.png";
+        $array_fotos = unserialize($row['url_image']);
+				if (empty($array_fotos)) {
+					 $url_image="demo_thumb.png";
 				} else {
-				$imgUrl=explode(".",$row['url_image']);
-				$imagen_nombre=$imgUrl[0];
-				$imagen_extension=$imgUrl[1];
-				$thumbnail=$imagen_nombre.'_thumb.'.$imagen_extension;
-				$url_image=$thumbnail;
+				//$imgUrl=explode(".",$row['url_image']);
+				//$imagen_nombre=$imgUrl[0];
+				//$imagen_extension=$imgUrl[1];
+				//$thumbnail=$imagen_nombre.'_thumb.'.$imagen_extension;
+				$url_image=$array_fotos[0];
 				};
 
 				$titulo=$row['titulo'];
 				$id_slide=$row['id'];
 				$descripcion=$row['descripcion'];
-				$articulo_id=$row['articulo_id'];
-				$prod_precio_regular=$row['precio']*1.65;
-				$prod_precio_oferta=$row['precio']*$row['porcentajeRecargo'];
+				$articulo_id=$row['id'];
+				$prod_precio_regular=$row['precioConIva']*1.65;
+				$prod_precio_oferta=$row['precioConIva']*$row['porcentajeRecargo'];
 				$prod_titulo_patron=$titulo;
 				$prod_descripcion_patron=$descripcion;
 				?>

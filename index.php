@@ -144,7 +144,7 @@ function load(page){
 var ordenar_por="<?php echo (isset($_SESSION['order']))?$_SESSION['order']:'';?>";
 $('#por_menor_precio').click(function () {
    ordenar_por='menor_precio';
-   var per_page=4;
+   var per_page=8;
    var query="";
    var parametros = {"action":"ajax","page":page,'query':ordenar_por,'per_page':per_page};
    $.ajax({
@@ -162,7 +162,7 @@ $('#por_menor_precio').click(function () {
 
 $('#por_mayor_precio').click(function () {
   ordenar_por='mayor_precio';
-  var per_page=4;
+  var per_page=8;
   var query="";
   var parametros = {"action":"ajax","page":page,'query':ordenar_por,'per_page':per_page};
   $.ajax({
@@ -178,7 +178,7 @@ $('#por_mayor_precio').click(function () {
   });
 });
 
-  var per_page=4;
+  var per_page=8;
   var query="";
   var parametros = {"action":"ajax","page":page,'query':ordenar_por,'per_page':per_page};
   $.ajax({
