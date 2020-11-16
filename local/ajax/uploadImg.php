@@ -8,6 +8,7 @@ if(!empty($_FILES['images']) && $id){
 
     $images_arr = array();
     $nombres_images_arr = array();
+    $band=true;
     foreach($_FILES['images']['name'] as $key=>$val){
         $image_name = $_FILES['images']['name'][$key];
         $tmp_name   = $_FILES['images']['tmp_name'][$key];
@@ -15,8 +16,12 @@ if(!empty($_FILES['images']) && $id){
         $type       = $_FILES['images']['type'][$key];
         $error      = $_FILES['images']['error'][$key];
         // File upload path
-        $fileName = basename($_FILES['images']['name'][$key]);
-        $targetFilePath = $targetDir.$id.'-big-'.$fileName;
+        $fileName = $id.'_'.basename($_FILES['images']['name'][$key]);
+        $fileName_xs = substr($fileName, 0, strlen($fileName)-4).'_xs'.substr($fileName, strlen($fileName)-4,4);
+        $fileName_md = substr($fileName, 0, strlen($fileName)-4).'_md'.substr($fileName, strlen($fileName)-4,4);
+        $fileName_lg = substr($fileName, 0, strlen($fileName)-4).'_lg'.substr($fileName, strlen($fileName)-4,4);
+
+        $targetFilePath = $targetDir.$fileName;
 
         // Check whether file type is valid
         $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
@@ -24,7 +29,15 @@ if(!empty($_FILES['images']) && $id){
             // Store images on the server
             if(move_uploaded_file($_FILES['images']['tmp_name'][$key],'../'.$targetFilePath)){
                 $images_arr[] = $targetFilePath;
-                $nombres_images_arr[] = $id.'-big-'.$fileName;
+                //if ($band) {
+                   crearThumbnail('../'.$targetFilePath, '../images/zoomengine/'.$fileName_lg, 768, 1024);
+                   crearThumbnail('../'.$targetFilePath, '../images/zoomengine/'.$fileName_md, 240, 320);
+                  //$band=false;
+                //}
+                crearThumbnail('../'.$targetFilePath, '../images/'.$fileName_xs, 48, 64);
+                crearThumbnail('../'.$targetFilePath, '../images/'.$fileName_md, 240, 320);
+                crearThumbnail('../'.$targetFilePath, '../images/'.$fileName_lg, 768, 1024);
+                $nombres_images_arr[] = $fileName;
             }
         }
     };

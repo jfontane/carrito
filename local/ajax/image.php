@@ -174,13 +174,13 @@ function guardarImagen($imagen, $nombre, $tipo){
 
     switch ($tipo){
         case "image/jpeg":
-            imagejpeg($imagen, $nombre, 100); // El 100 es la calidade de la imagen (entre 1 y 100. Con 100 sin compresion ni perdida de calidad.).
+            imagejpeg($imagen, '../'.$nombre, 100); // El 100 es la calidade de la imagen (entre 1 y 100. Con 100 sin compresion ni perdida de calidad.).
             break;
         case "image/gif":
-            imagegif($imagen, $nombre);
+            imagegif($imagen, '../'.$nombre);
             break;
         case "image/png":
-            imagepng($imagen, $nombre, 9); // El 9 es grado de compresion de la imagen (entre 0 y 9. Con 9 maxima compresion pero igual calidad.).
+            imagepng($imagen, '../'.$nombre, 9); // El 9 es grado de compresion de la imagen (entre 0 y 9. Con 9 maxima compresion pero igual calidad.).
             break;
         default :
             echo "Error: Tipo de imagen no permitido.";
